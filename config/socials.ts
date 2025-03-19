@@ -1,5 +1,5 @@
 import { IconType } from 'react-icons';
-import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaXTwitter, FaTelegram } from 'react-icons/fa6';
 
 interface Social {
     name: string;
@@ -10,23 +10,23 @@ interface Social {
 const socials: Social[] = [
     {
         name: 'Github',
-        url: 'https://github.com/bymaul/',
+        url: 'https://github.com/filiksyos',
         icon: FaGithub,
     },
     {
-        name: 'Instagram',
-        url: 'https://instagram.com/maulaanaahmad',
-        icon: FaInstagram,
+        name: 'X',
+        url: 'https://x.com/iammartillon', 
+        icon: FaXTwitter,
     },
     {
         name: 'LinkedIn',
-        url: 'https://linkedin.com/in/maulana-ahmad',
+        url: ' https://www.linkedin.com/in/filiksyos-destaw-9241a2272',
         icon: FaLinkedin,
     },
     {
-        name: 'YouTube',
-        url: 'https://youtube.com/@maulx',
-        icon: FaYoutube,
+        name: 'Telegram',
+        url: 'https://web.telegram.org/k/#@filiksyos1', 
+        icon: FaTelegram,
     },
 ];
 

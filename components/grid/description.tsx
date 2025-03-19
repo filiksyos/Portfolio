@@ -1,4 +1,4 @@
-import profile from '@/public/images/profile.jpg';
+import profile from '@/public/images/new_profile.jpg';
 import Image from 'next/image';
 import Card from '../ui/card';
 
@@ -8,7 +8,7 @@ export default function Description() {
             <div className='relative size-14 overflow-hidden rounded-full sm:size-16'>
                 <Image
                     src={profile}
-                    alt='Maulana Ahmad Aji Triadi'
+                    alt='Filiksyos Destaw'
                     fill
                     sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     placeholder='blur'
@@ -16,7 +16,7 @@ export default function Description() {
                 />
             </div>
             <p className='leading-relaxed'>
-                Hi, I&apos;m <span className='font-pixelify-sans text-xl'>Maulana</span>, a software engineer from
+                Hi, I&apos;m <span className='font-pixelify-sans text-xl'>Filiksyos</span>, a software engineer from
                 Bahir Dar, Ethiopia.{' '}
                 <span className='hidden md:inline'>I love building reliable software and learning new things.</span>
             </p>
