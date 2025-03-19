@@ -20,7 +20,7 @@ const socials: Social[] = [
     },
     {
         name: 'LinkedIn',
-        url: ' https://www.linkedin.com/in/filiksyos-destaw-9241a2272',
+        url: 'https://www.linkedin.com/in/filiksyos-destaw-9241a2272',
         icon: FaLinkedin,
     },
     {
