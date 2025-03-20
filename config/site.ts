@@ -1,5 +1,5 @@
 export const siteConfig = {
-    title: 'Maulana Ahmad Aji Triadi',
+    title: 'Filiksyos',
     description: 'I am a software engineer based in Bahir Dar, Ethiopia.',
     url: 'https://maulana.dev',
     image: 'https://maulana.dev/images/og-image.png',
