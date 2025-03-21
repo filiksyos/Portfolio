@@ -6,7 +6,7 @@ import Anchor from '../ui/anchor';
 import { FaArrowRight } from 'react-icons/fa6';
 
 export default function Project() {
-    const projectName = 'Next Blog Starter';
+    const projectName = 'IELTS Tip Generator';
 
     return (
         <Card className='group relative bg-red-100'>

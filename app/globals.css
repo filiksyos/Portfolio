@@ -40,6 +40,12 @@
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
     }
+
+    img {
+        pointer-events: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
 }
 
 @keyframes playing {
@@ -57,34 +63,34 @@
 /* React Grid Layout */
 .react-grid-layout {
     @apply relative transition-[height] duration-200 ease-in-out;
+}
 
-    .react-grid-item {
-        @apply transition-[left,_top,_width,_height] delay-0 duration-500 ease-in-out;
+.react-grid-layout .react-grid-item {
+    @apply transition-[left,_top,_width,_height] delay-0 duration-500 ease-in-out;
+}
 
-        img {
-            @apply pointer-events-none select-none;
-        }
+.react-grid-layout .react-grid-item img {
+    @apply pointer-events-none select-none;
+}
 
-        &.rezising {
-            @apply z-1 transition-none will-change-[width,_height];
-        }
+.react-grid-layout .react-grid-item.rezising {
+    @apply z-1 transition-none will-change-[width,_height];
+}
 
-        &.react-draggable-dragging {
-            @apply z-3 transition-none will-change-transform;
-        }
+.react-grid-layout .react-grid-item.react-draggable-dragging {
+    @apply z-3 transition-none will-change-transform;
+}
 
-        &.dropping {
-            @apply invisible;
-        }
+.react-grid-layout .react-grid-item.dropping {
+    @apply invisible;
+}
 
-        &.react-grid-placeholder {
-            @apply z-2 rounded-3xl bg-black opacity-5 duration-100 select-none;
+.react-grid-layout .react-grid-item.react-grid-placeholder {
+    @apply z-2 rounded-3xl bg-black opacity-5 duration-100 select-none;
+}
 
-            html.dark & {
-                @apply bg-white opacity-5;
-            }
-        }
-    }
+html.dark .react-grid-layout .react-grid-item.react-grid-placeholder {
+    @apply bg-white opacity-5;
 }
 
 /* Mapbox */
@@ -99,10 +105,10 @@ div[mapboxgl-children] {
 /* MDX */
 .prose .anchor {
     @apply invisible absolute -ml-6 w-full pr-2 no-underline;
+}
 
-    &:after {
-        @apply text-neutral-300 content-['#'] dark:text-neutral-700;
-    }
+.prose .anchor:after {
+    @apply text-neutral-300 content-['#'] dark:text-neutral-700;
 }
 
 .anchor:hover {
