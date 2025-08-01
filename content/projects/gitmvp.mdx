@@ -1,0 +1,59 @@
+---
+title: GitMVP
+description: An MCP server that allows AI coding tools like Cursor to search and read GitHub repositories.
+links: [{"name": "Website","url": "https://gitmvp.com"}]
+---
+
+GitMVP is an innovative MCP (Model Context Protocol) server that bridges the gap between AI coding assistants and GitHub repositories. It enables tools like Cursor to seamlessly search, discover, and read repository code, dramatically enhancing AI-assisted development workflows.
+
+## Demo Video
+
+<div className="my-8 rounded-3xl overflow-hidden shadow-lg">
+  <video 
+    width="100%" 
+    height="auto" 
+    controls 
+    preload="metadata"
+    poster="/projects/gitmvp/gitmvp 1.png"
+    className="w-full h-auto"
+    crossOrigin="anonymous"
+  >
+    <source src="https://github.com/user-attachments/assets/1a8f08f8-1b19-4585-a2a4-f4a5e8f2b6e7" type="video/mp4" />
+    <source src="https://github.com/user-attachments/assets/1a8f08f8-1b19-4585-a2a4-f4a5e8f2b6e7" type="video/webm" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+## How It Works
+
+**"Let Cursor cheat from GitHub"** - GitMVP creates a direct connection between AI coding tools and GitHub repositories:
+
+1. **🔍 AI searches GitHub** - Cursor can query repositories based on your coding needs
+2. **📚 Repository discovery** - Finds relevant repositories and solutions 
+3. **📖 Code reading** - Fetches and analyzes source files from repositories
+4. **💡 Enhanced understanding** - AI gains context from real-world codebases
+5. **🚀 Better assistance** - More informed and accurate coding suggestions
+
+## Key Features
+
+- **MCP Server Integration**: Seamless Model Context Protocol implementation
+- **GitHub Repository Access**: Direct search and read capabilities for public repositories  
+- **AI Tool Compatibility**: Designed specifically for Cursor and similar AI assistants
+- **Real-time Code Fetching**: Instant access to repository source files
+- **Smart Repository Discovery**: Intelligent matching of repositories to development needs
+
+## Integration
+
+Add GitMVP to your Cursor setup by including this in your `mcp.json` file:
+
+```json
+{
+  "mcpServers": {
+    "gitmvp": {
+      "url": "https://gitmvp.com/mcp"
+    }
+  }
+}
+```
+
+GitMVP transforms how AI coding assistants understand and work with code by providing direct access to the vast knowledge contained in GitHub repositories.

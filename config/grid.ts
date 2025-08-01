@@ -1,6 +1,7 @@
 import Article from '@/components/grid/article';
 import Contact from '@/components/grid/contact';
 import Description from '@/components/grid/description';
+import GitMVP from '@/components/grid/gitmvp';
 import GitSearchAI from '@/components/grid/gitsearchai';
 import GitToDoc from '@/components/grid/gittodoc';
 import Project from '@/components/grid/project';
@@ -23,6 +24,7 @@ export const gridItems: GridItem[] = [
     { i: 'article', component: Article },
     { i: 'gittodoc', component: GitToDoc },
     { i: 'gitsearchai', component: GitSearchAI },
+    { i: 'gitmvp', component: GitMVP },
     { i: 'theme', component: Theme },
     { i: 'linkedin', component: LinkedIn },
     { i: 'contact', component: Contact },
@@ -41,6 +43,7 @@ export const layouts: { [key in Layouts]: Layout[] } = {
         { i: 'theme', x: 2, y: 2, w: 1, h: 1 },
         { i: 'linkedin', x: 3, y: 2, w: 1, h: 1 },
         { i: 'gitsearchai', x: 0, y: 3, w: 2, h: 1 },
+        { i: 'gitmvp', x: 2, y: 3, w: 2, h: 1 },
         { i: 'contact', x: 0, y: 4, w: 4, h: 1 },
     ],
     md: [
@@ -53,7 +56,8 @@ export const layouts: { [key in Layouts]: Layout[] } = {
         { i: 'article', x: 0, y: 3, w: 2, h: 2 },
         { i: 'gittodoc', x: 2, y: 3, w: 2, h: 1 },
         { i: 'gitsearchai', x: 2, y: 4, w: 2, h: 1 },
-        { i: 'contact', x: 0, y: 5, w: 4, h: 2 },
+        { i: 'gitmvp', x: 0, y: 5, w: 2, h: 1 },
+        { i: 'contact', x: 0, y: 6, w: 4, h: 2 },
     ],
     sm: [
         { i: 'description', x: 0, y: 0, w: 2, h: 2 },
@@ -65,7 +69,8 @@ export const layouts: { [key in Layouts]: Layout[] } = {
         { i: 'article', x: 0, y: 7, w: 2, h: 2 },
         { i: 'gittodoc', x: 0, y: 9, w: 2, h: 1 },
         { i: 'gitsearchai', x: 0, y: 10, w: 2, h: 1 },
-        { i: 'contact', x: 0, y: 11, w: 2, h: 2 },
+        { i: 'gitmvp', x: 0, y: 11, w: 2, h: 1 },
+        { i: 'contact', x: 0, y: 12, w: 2, h: 2 },
     ],
 };
 
