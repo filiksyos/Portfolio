@@ -4,9 +4,9 @@ import Description from '@/components/grid/description';
 import GitMVP from '@/components/grid/gitmvp';
 import GitSearchAI from '@/components/grid/gitsearchai';
 import GitToDoc from '@/components/grid/gittodoc';
-import Project from '@/components/grid/project';
 import LinkedIn from '@/components/grid/linkedin';
 import Location from '@/components/grid/location';
+import OtherProjects from '@/components/grid/other-projects';
 import SkillsShowcase from '@/components/grid/skills-showcase';
 import Theme from '@/components/grid/theme';
 import { Layout } from 'react-grid-layout';
@@ -19,12 +19,12 @@ interface GridItem {
 export const gridItems: GridItem[] = [
     { i: 'description', component: Description },
     { i: 'location', component: Location },
-    { i: 'project', component: Project },
     { i: 'skills', component: SkillsShowcase },
     { i: 'article', component: Article },
     { i: 'gittodoc', component: GitToDoc },
     { i: 'gitsearchai', component: GitSearchAI },
     { i: 'gitmvp', component: GitMVP },
+    { i: 'other-projects', component: OtherProjects },
     { i: 'theme', component: Theme },
     { i: 'linkedin', component: LinkedIn },
     { i: 'contact', component: Contact },
@@ -36,7 +36,7 @@ export const layouts: { [key in Layouts]: Layout[] } = {
     lg: [
         { i: 'description', x: 0, y: 0, w: 2, h: 1 },
         { i: 'location', x: 2, y: 0, w: 1, h: 1 },
-        { i: 'project', x: 3, y: 0, w: 1, h: 2 },
+        { i: 'other-projects', x: 3, y: 0, w: 1, h: 2 },
         { i: 'skills', x: 0, y: 1, w: 1, h: 1 },
         { i: 'article', x: 1, y: 1, w: 2, h: 1 },
         { i: 'gittodoc', x: 0, y: 2, w: 2, h: 1 },
@@ -50,7 +50,7 @@ export const layouts: { [key in Layouts]: Layout[] } = {
         { i: 'description', x: 0, y: 0, w: 2, h: 2 },
         { i: 'location', x: 2, y: 0, w: 2, h: 1 },
         { i: 'linkedin', x: 2, y: 1, w: 1, h: 1 },
-        { i: 'project', x: 3, y: 1, w: 1, h: 2 },
+        { i: 'other-projects', x: 3, y: 1, w: 1, h: 2 },
         { i: 'skills', x: 0, y: 2, w: 2, h: 1 },
         { i: 'theme', x: 2, y: 2, w: 1, h: 1 },
         { i: 'article', x: 0, y: 3, w: 2, h: 2 },
@@ -63,7 +63,7 @@ export const layouts: { [key in Layouts]: Layout[] } = {
         { i: 'description', x: 0, y: 0, w: 2, h: 2 },
         { i: 'location', x: 0, y: 2, w: 2, h: 1 },
         { i: 'linkedin', x: 0, y: 3, w: 1, h: 1 },
-        { i: 'project', x: 1, y: 3, w: 1, h: 2 },
+        { i: 'other-projects', x: 1, y: 3, w: 1, h: 2 },
         { i: 'theme', x: 0, y: 4, w: 1, h: 1 },
         { i: 'skills', x: 0, y: 5, w: 2, h: 2 },
         { i: 'article', x: 0, y: 7, w: 2, h: 2 },
