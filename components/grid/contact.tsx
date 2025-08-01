@@ -7,7 +7,7 @@ export default function Contact() {
         <Card className='flex flex-col justify-center gap-6 p-8'>
             <h2 className='font-pixelify-sans text-2xl max-md:text-center'>Building SaaS or love great content? 👋</h2>
             <p className='leading-relaxed max-md:hidden'>
-                Whether you're interested in my SaaS products, want to collaborate on content, or just want to connect—reach out below!
+                Whether you&rsquo;re interested in my SaaS products, want to collaborate on content, or just want to connect—reach out below!
             </p>
             <div className='inline-flex flex-col items-center gap-6 lg:flex-row'>
                 <a
