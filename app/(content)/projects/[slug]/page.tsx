@@ -31,7 +31,7 @@ export const generateMetadata = async ({ params }: { params: Params }) => {
             description,
             type: 'article',
             url: `${siteConfig.url}/projects/${project.slug}`,
-            authors: 'Maulana',
+            authors: 'Filiksyos',
             images: siteConfig.image,
         },
         twitter: {
@@ -60,7 +60,7 @@ const ProjectPage = async ({ params }: { params: Params }) => {
         author: [
             {
                 '@type': 'Person',
-                name: 'Maulana',
+                name: 'Filiksyos',
                 url: siteConfig.url,
             },
         ],
