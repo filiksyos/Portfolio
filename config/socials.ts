@@ -15,7 +15,7 @@ const socials: Social[] = [
     },
     {
         name: 'X',
-        url: 'https://x.com/iammartillon', 
+        url: 'https://x.com/filiksyos', 
         icon: FaXTwitter,
     },
     {
